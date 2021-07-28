@@ -12,7 +12,6 @@ export const initializeFirebase = () => {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
- firebase.getInstance().subscribeToTopic("all");
 };
 export const askForPermissioToReceiveNotifications = async () => {
   try {
