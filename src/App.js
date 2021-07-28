@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { askForPermissioToReceiveNotifications } from './push-notification';
 function App() {
   return (
     <div className="App">
@@ -17,6 +17,9 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={askForPermissioToReceiveNotifications} >
+          Click to receive notifications
+        </button>
       </header>
     </div>
   );
