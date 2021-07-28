@@ -13,4 +13,3 @@ var firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging();
-Firebase.getInstance().subscribeToTopic("all");
