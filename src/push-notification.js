@@ -1,5 +1,4 @@
 import firebase from "firebase";
-import { FirebaseMessaging } from "firebase/messaging"
 
 export const initializeFirebase = () => {
   var firebaseConfig = {
@@ -13,7 +12,7 @@ export const initializeFirebase = () => {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  FirebaseMessaging.getInstance().subscribeToTopic("all");
+ firebase.getInstance().subscribeToTopic("all");
 };
 export const askForPermissioToReceiveNotifications = async () => {
   try {
